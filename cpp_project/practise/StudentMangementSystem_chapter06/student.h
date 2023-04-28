@@ -1,3 +1,6 @@
+#ifndef STUDENG_H
+#define STUDENG_H
+
 #include <fstream>
 #include <iostream>
 #include <string.h>
@@ -33,3 +36,6 @@ public:
     friend ostream &operator<<(ostream &, const Student &); // 友元函数重载输出运算符
     friend istream &operator>>(istream &, Student &);       // 友元函数重载输入运算符
 };
+
+
+#endif

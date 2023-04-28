@@ -1,3 +1,6 @@
+#ifndef TEMPLATE_CLASS
+#define TEMPLATE_CLASS
+
 #include <iostream>
 using namespace std;
 template <class T1, class T2>
@@ -26,3 +29,4 @@ void Myclass<T1, T2>::Print()
     cout << "x=" << x<<" y=" << y << endl;
 }
 
+#endif

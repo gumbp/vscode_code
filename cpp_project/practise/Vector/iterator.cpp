@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+
+
 int main()
 {
     vector<char>::const_iterator p;

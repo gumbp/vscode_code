@@ -1,3 +1,6 @@
+#ifndef INTERFACE_H
+#define INTERFACE_H
+
 #include "student.h"
 const int N = 2;
 class Interface
@@ -15,3 +18,6 @@ public:
     void Statistic(); // 按性别统计学生信息
     bool search();    // 按名字查询学生信息
 };
+
+
+#endif
