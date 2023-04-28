@@ -1,17 +1,17 @@
 #include "sort.h"
 
-sort::sort() {}
-sort::sort(const int &n)
+sort_compare::sort_compare() {}
+sort_compare::sort_compare(const int &n)
 {
     for (int i = 0; i < n; i++)
     {
         nums[i] = 0;
     }
 }
-sort::~sort() {}
+sort_compare::~sort_compare() {}
 
 // 快排序
-int sort::partition(vector<int> &nums, int low, int high)
+int sort_compare::partition(vector<int> &nums, int low, int high)
 {
     int base = nums[low];
     while (low < high)
@@ -31,7 +31,7 @@ int sort::partition(vector<int> &nums, int low, int high)
     return low;
 }
 
-vector<int> sort::quick_sort(vector<int> &nums, int low, int high)
+vector<int> sort_compare::quick_sort(vector<int> &nums, int low, int high)
 {
     if (low < high)
     {
@@ -43,7 +43,7 @@ vector<int> sort::quick_sort(vector<int> &nums, int low, int high)
 }
 
 // 交换函数
-void sort::swap(int &x, int &y)
+void sort_compare::swap(int &x, int &y)
 {
     int temp;
     temp = x;
@@ -52,7 +52,7 @@ void sort::swap(int &x, int &y)
 }
 
 // 冒泡排序
-vector<int> sort::bubble_sort(vector<int> &nums)
+vector<int> sort_compare::bubble_sort(vector<int> &nums)
 {
     int n = nums.size();
     for (int i = 0; i < n - 1; i++) // 共进行n-1趟
@@ -69,7 +69,7 @@ vector<int> sort::bubble_sort(vector<int> &nums)
 }
 
 // 选择法排序
-vector<int> sort::select_sort(vector<int> &nums)
+vector<int> sort_compare::select_sort(vector<int> &nums)
 {
     int n = nums.size();
     for (int i = 0; i < n - 1; i++)
@@ -91,7 +91,7 @@ vector<int> sort::select_sort(vector<int> &nums)
 }
 
 // 直接插入排序   细读
-vector<int> sort::insert_sort(vector<int> &nums)
+vector<int> sort_compare::insert_sort(vector<int> &nums)
 {
     int n = nums.size();
     int i, j;
@@ -112,7 +112,7 @@ vector<int> sort::insert_sort(vector<int> &nums)
 }
 
 // 归并排序
-vector<int> sort::merge_sort(vector<int> &nums, int low, int high)
+vector<int> sort_compare::merge_sort(vector<int> &nums, int low, int high)
 {
     if (low < high)
     {
@@ -124,7 +124,7 @@ vector<int> sort::merge_sort(vector<int> &nums, int low, int high)
     return nums;
 }
 
-void sort::merge(vector<int> &nums, int low, int mid, int high)
+void sort_compare::merge(vector<int> &nums, int low, int mid, int high)
 {
     vector<int> copy_cache;
     int i, j, k;
@@ -154,7 +154,7 @@ void sort::merge(vector<int> &nums, int low, int mid, int high)
 }
 
 // 计数排序
-vector<int> sort::count_sort(vector<int> &nums)
+vector<int> sort_compare::count_sort(vector<int> &nums)
 {
 
     int min = 65536;
@@ -194,7 +194,7 @@ vector<int> sort::count_sort(vector<int> &nums)
 }
 
 // 堆排序
-void sort::heap_adjustment(vector<int> &nums, int i, int n)
+void sort_compare::heap_adjustment(vector<int> &nums, int i, int n)
 {
     // paramaters checkout
 
@@ -232,7 +232,7 @@ void sort::heap_adjustment(vector<int> &nums, int i, int n)
     }
 }
 
-vector<int> sort::heap_sort(vector<int> &nums)
+vector<int> sort_compare::heap_sort(vector<int> &nums)
 {
     int n = nums.size();
     // constructing the big root heap originally
@@ -249,7 +249,7 @@ vector<int> sort::heap_sort(vector<int> &nums)
 }
 
 // 折半查找算法
-int sort::middle_search(vector<int> &nums, int key)
+int sort_compare::middle_search(vector<int> &nums, int key)
 {
     int low = 0;
     int high = nums.size() - 1;
@@ -273,7 +273,7 @@ int sort::middle_search(vector<int> &nums, int key)
     return -1;
 }
 
-void sort::menu()
+void sort_compare::menu()
 {
     cout << "欢迎进入排序算法菜单界面！请选择你的排序算法" << endl;
     cout << "*************1.冒泡排序*************" << endl;
@@ -287,7 +287,7 @@ void sort::menu()
     cout << "*************9.排序.*************" << endl;
     cout << "*************0.退出系统.*************" << endl;
 }
-void sort::Display()
+void sort_compare::Display()
 {
     cout << "排序后的数组元素为" << endl;
     for (int i = 0; i < nums.size(); i++)

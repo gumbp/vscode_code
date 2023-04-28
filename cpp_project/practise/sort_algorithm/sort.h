@@ -5,16 +5,16 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-class sort
+class sort_compare
 {
 private:
     vector<int> nums;
 
 public:
-    sort();
-    sort(const int &n);
-    sort(const sort &S);
-    ~sort();
+    sort_compare();
+    sort_compare(const int &n);
+    sort_compare(const sort_compare &S);
+    ~sort_compare();
     void menu();
     void Display();
 
