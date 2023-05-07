@@ -198,7 +198,7 @@ void sort_compare::heap_adjustment(vector<int> &nums, int i, int n)
 {
     // paramaters checkout
 
-    if (nums.size() <=0)
+    if (nums.size() <= 0)
     {
         cout << "the sort array's is null";
         return;
