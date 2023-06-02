@@ -1,0 +1,49 @@
+\doxysection{sort.\+h}
+\hypertarget{sort_8h_source}{}\label{sort_8h_source}\index{G:/c\_cpp\_projectfile/cpp\_project/practise/sort\_algorithm/sort.h@{G:/c\_cpp\_projectfile/cpp\_project/practise/sort\_algorithm/sort.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ sort\_h}}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ sort\_h}}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00007}00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00008}\mbox{\hyperlink{classsort__compare}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classsort__compare}{sort\_compare}}}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00010}00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00011}00011\ \ \ \ \ vector<int>\ nums;}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00013}00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00014}00014\ \ \ \ \ \mbox{\hyperlink{classsort__compare}{sort\_compare}}();}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{classsort__compare}{sort\_compare}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \&n);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{classsort__compare}{sort\_compare}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classsort__compare}{sort\_compare}}\ \&S);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{classsort__compare}{\string~sort\_compare}}();}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{void}\ menu();}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{void}\ Display();}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00021}00021\ \ \ \ \ \textcolor{keywordtype}{int}\ partition(vector<int>\ \&nums,\ \textcolor{keywordtype}{int}\ low,\ \textcolor{keywordtype}{int}\ high);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00023}00023\ \ \ \ \ vector<int>\ quick\_sort(vector<int>\ \&nums,\ \textcolor{keywordtype}{int}\ low,\ \textcolor{keywordtype}{int}\ high);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00024}00024\ \ \ \ \ \textcolor{keywordtype}{void}\ swap(\textcolor{keywordtype}{int}\ \&x,\ \textcolor{keywordtype}{int}\ \&y);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00026}00026\ \ \ \ \ vector<int>\ bubble\_sort(vector<int>\ \&nums);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00028}00028\ \ \ \ \ vector<int>\ insert\_sort(vector<int>\ \&nums);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00029}00029\ \ \ \ \ vector<int>\ sort\_compare::select\_sort(vector<int>\ \&nums);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00030}00030\ \ \ \ \ vector<int>\ merge\_sort(vector<int>\ \&nums,\ \textcolor{keywordtype}{int}\ low,\ \textcolor{keywordtype}{int}\ high);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{void}\ merge(vector<int>\ \&nums,\ \textcolor{keywordtype}{int}\ low,\ \textcolor{keywordtype}{int}\ mid,\ \textcolor{keywordtype}{int}\ high);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00033}00033\ \ \ \ \ vector<int>\ count\_sort(vector<int>\ \&nums);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00035}00035\ \ \ \ \ vector<int>\ heap\_sort(vector<int>\ \&nums);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{void}\ heap\_adjustment(vector<int>\ \&nums,\ \textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00038}00038\ \ \ \ \ \textcolor{comment}{//\ 查找算法}}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00040}00040\ \ \ \ \ \textcolor{keywordtype}{int}\ middle\_search(vector<int>\ \&nums,\ \textcolor{keywordtype}{int}\ key);}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00041}00041\ \};}
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{sort_8h_source_l00043}00043\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

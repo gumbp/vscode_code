@@ -1,0 +1,227 @@
+\doxysection{sort\+\_\+compare Class Reference}
+\hypertarget{classsort__compare}{}\label{classsort__compare}\index{sort\_compare@{sort\_compare}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsort__compare_a59bd1e8c97d53a4e9b53c27c954abff0}{sort\+\_\+compare}} (const int \&n)
+\item 
+\Hypertarget{classsort__compare_ae745c99f041f8090b8c31fd82a236a57}\label{classsort__compare_ae745c99f041f8090b8c31fd82a236a57} 
+{\bfseries sort\+\_\+compare} (const \mbox{\hyperlink{classsort__compare}{sort\+\_\+compare}} \&S)
+\item 
+void \mbox{\hyperlink{classsort__compare_a78e7a3193735fc83c7a330f2d876809a}{menu}} ()
+\item 
+void \mbox{\hyperlink{classsort__compare_ad81d0a50a7ccea2b09079b3aee357fab}{Display}} ()
+\item 
+int \mbox{\hyperlink{classsort__compare_aa4084e17a244b1e7732e1e12f56d9190}{partition}} (vector$<$ int $>$ \&nums, int low, int high)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classsort__compare_a87038a5fd3dfe2a60cad98d543ff453a}{quick\+\_\+sort}} (vector$<$ int $>$ \&nums, int low, int high)
+\item 
+void \mbox{\hyperlink{classsort__compare_a68a430c4684a107c1660999c4938d1a8}{swap}} (int \&x, int \&y)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classsort__compare_adf944b1a531172e8e7a889a23a859681}{bubble\+\_\+sort}} (vector$<$ int $>$ \&nums)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classsort__compare_a7110106f97edf7b5515460fce0323561}{insert\+\_\+sort}} (vector$<$ int $>$ \&nums)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classsort__compare_ad9669c13b59ce340149dc661d183c4a7}{select\+\_\+sort}} (vector$<$ int $>$ \&nums)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classsort__compare_a34015ac505e4ff5f91e3e2d8eade8b13}{merge\+\_\+sort}} (vector$<$ int $>$ \&nums, int low, int high)
+\item 
+void \mbox{\hyperlink{classsort__compare_a6a6a2776894b1752ebb24ace9e2a6e76}{merge}} (vector$<$ int $>$ \&nums, int low, int mid, int high)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classsort__compare_aef76b2ee5f59d3184d32afc821dbe681}{count\+\_\+sort}} (vector$<$ int $>$ \&nums)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classsort__compare_acc50c35a6d8a41801a9ce7ced9bc607a}{heap\+\_\+sort}} (vector$<$ int $>$ \&nums)
+\item 
+void \mbox{\hyperlink{classsort__compare_a0f6b2356a31fdfb96f6dc806526e0c54}{heap\+\_\+adjustment}} (vector$<$ int $>$ \&nums, int i, int n)
+\item 
+int \mbox{\hyperlink{classsort__compare_a0f4911c72e6019bac8817b73618211cb}{middle\+\_\+search}} (vector$<$ int $>$ \&nums, int key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{sort_8h_source_l00008}{8}} of file \mbox{\hyperlink{sort_8h_source}{sort.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsort__compare_a770572a82f0f98100013735cf8fea44b}\label{classsort__compare_a770572a82f0f98100013735cf8fea44b} 
+\index{sort\_compare@{sort\_compare}!sort\_compare@{sort\_compare}}
+\index{sort\_compare@{sort\_compare}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{sort\_compare()}{sort\_compare()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sort\+\_\+compare\+::sort\+\_\+compare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a59bd1e8c97d53a4e9b53c27c954abff0}\label{classsort__compare_a59bd1e8c97d53a4e9b53c27c954abff0} 
+\index{sort\_compare@{sort\_compare}!sort\_compare@{sort\_compare}}
+\index{sort\_compare@{sort\_compare}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{sort\_compare()}{sort\_compare()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sort\+\_\+compare\+::sort\+\_\+compare (\begin{DoxyParamCaption}\item[{const int \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_aae936b0c2388967fadf2d420eef8a55e}\label{classsort__compare_aae936b0c2388967fadf2d420eef8a55e} 
+\index{sort\_compare@{sort\_compare}!````~sort\_compare@{\texorpdfstring{$\sim$}{\string~}sort\_compare}}
+\index{````~sort\_compare@{\texorpdfstring{$\sim$}{\string~}sort\_compare}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}sort\_compare()}{\string~sort\_compare()}}
+{\footnotesize\ttfamily sort\+\_\+compare\+::\texorpdfstring{$\sim$}{\string~}sort\+\_\+compare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsort__compare_adf944b1a531172e8e7a889a23a859681}\label{classsort__compare_adf944b1a531172e8e7a889a23a859681} 
+\index{sort\_compare@{sort\_compare}!bubble\_sort@{bubble\_sort}}
+\index{bubble\_sort@{bubble\_sort}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{bubble\_sort()}{bubble\_sort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ sort\+\_\+compare\+::bubble\+\_\+sort (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_aef76b2ee5f59d3184d32afc821dbe681}\label{classsort__compare_aef76b2ee5f59d3184d32afc821dbe681} 
+\index{sort\_compare@{sort\_compare}!count\_sort@{count\_sort}}
+\index{count\_sort@{count\_sort}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{count\_sort()}{count\_sort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ sort\+\_\+compare\+::count\+\_\+sort (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00157}{157}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_ad81d0a50a7ccea2b09079b3aee357fab}\label{classsort__compare_ad81d0a50a7ccea2b09079b3aee357fab} 
+\index{sort\_compare@{sort\_compare}!Display@{Display}}
+\index{Display@{Display}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void sort\+\_\+compare\+::\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00290}{290}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a0f6b2356a31fdfb96f6dc806526e0c54}\label{classsort__compare_a0f6b2356a31fdfb96f6dc806526e0c54} 
+\index{sort\_compare@{sort\_compare}!heap\_adjustment@{heap\_adjustment}}
+\index{heap\_adjustment@{heap\_adjustment}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{heap\_adjustment()}{heap\_adjustment()}}
+{\footnotesize\ttfamily void sort\+\_\+compare\+::heap\+\_\+adjustment (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums,  }\item[{int}]{i,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00197}{197}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_acc50c35a6d8a41801a9ce7ced9bc607a}\label{classsort__compare_acc50c35a6d8a41801a9ce7ced9bc607a} 
+\index{sort\_compare@{sort\_compare}!heap\_sort@{heap\_sort}}
+\index{heap\_sort@{heap\_sort}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{heap\_sort()}{heap\_sort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ sort\+\_\+compare\+::heap\+\_\+sort (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00235}{235}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a7110106f97edf7b5515460fce0323561}\label{classsort__compare_a7110106f97edf7b5515460fce0323561} 
+\index{sort\_compare@{sort\_compare}!insert\_sort@{insert\_sort}}
+\index{insert\_sort@{insert\_sort}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{insert\_sort()}{insert\_sort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ sort\+\_\+compare\+::insert\+\_\+sort (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00094}{94}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a78e7a3193735fc83c7a330f2d876809a}\label{classsort__compare_a78e7a3193735fc83c7a330f2d876809a} 
+\index{sort\_compare@{sort\_compare}!menu@{menu}}
+\index{menu@{menu}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void sort\+\_\+compare\+::menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00276}{276}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a6a6a2776894b1752ebb24ace9e2a6e76}\label{classsort__compare_a6a6a2776894b1752ebb24ace9e2a6e76} 
+\index{sort\_compare@{sort\_compare}!merge@{merge}}
+\index{merge@{merge}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily void sort\+\_\+compare\+::merge (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums,  }\item[{int}]{low,  }\item[{int}]{mid,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00127}{127}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a34015ac505e4ff5f91e3e2d8eade8b13}\label{classsort__compare_a34015ac505e4ff5f91e3e2d8eade8b13} 
+\index{sort\_compare@{sort\_compare}!merge\_sort@{merge\_sort}}
+\index{merge\_sort@{merge\_sort}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{merge\_sort()}{merge\_sort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ sort\+\_\+compare\+::merge\+\_\+sort (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00115}{115}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a0f4911c72e6019bac8817b73618211cb}\label{classsort__compare_a0f4911c72e6019bac8817b73618211cb} 
+\index{sort\_compare@{sort\_compare}!middle\_search@{middle\_search}}
+\index{middle\_search@{middle\_search}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{middle\_search()}{middle\_search()}}
+{\footnotesize\ttfamily int sort\+\_\+compare\+::middle\+\_\+search (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums,  }\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00252}{252}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_aa4084e17a244b1e7732e1e12f56d9190}\label{classsort__compare_aa4084e17a244b1e7732e1e12f56d9190} 
+\index{sort\_compare@{sort\_compare}!partition@{partition}}
+\index{partition@{partition}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily int sort\+\_\+compare\+::partition (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a87038a5fd3dfe2a60cad98d543ff453a}\label{classsort__compare_a87038a5fd3dfe2a60cad98d543ff453a} 
+\index{sort\_compare@{sort\_compare}!quick\_sort@{quick\_sort}}
+\index{quick\_sort@{quick\_sort}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{quick\_sort()}{quick\_sort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ sort\+\_\+compare\+::quick\+\_\+sort (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums,  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_ad9669c13b59ce340149dc661d183c4a7}\label{classsort__compare_ad9669c13b59ce340149dc661d183c4a7} 
+\index{sort\_compare@{sort\_compare}!select\_sort@{select\_sort}}
+\index{select\_sort@{select\_sort}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{select\_sort()}{select\_sort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ sort\+\_\+compare\+::select\+\_\+sort (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{nums }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+\Hypertarget{classsort__compare_a68a430c4684a107c1660999c4938d1a8}\label{classsort__compare_a68a430c4684a107c1660999c4938d1a8} 
+\index{sort\_compare@{sort\_compare}!swap@{swap}}
+\index{swap@{swap}!sort\_compare@{sort\_compare}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void sort\+\_\+compare\+::swap (\begin{DoxyParamCaption}\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{sort_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{sort_8cpp_source}{sort.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/c\+\_\+cpp\+\_\+projectfile/cpp\+\_\+project/practise/sort\+\_\+algorithm/sort.\+h\item 
+G\+:/c\+\_\+cpp\+\_\+projectfile/cpp\+\_\+project/practise/sort\+\_\+algorithm/sort.\+cpp\end{DoxyCompactItemize}
