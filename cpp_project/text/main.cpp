@@ -1,6 +1,6 @@
 #include "printGG.h"
 int main()
 {
-    print("hello world");
+    printtt("hello world");
     return 0;
 }

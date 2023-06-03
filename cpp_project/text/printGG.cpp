@@ -1,4 +1,4 @@
 #include "printGG.h"
-void print(string s){
+void printtt(string s){
     cout<<s<<endl;
 }
