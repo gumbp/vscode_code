@@ -76,7 +76,7 @@
     "editor.fontSize": 18,
     "editor.codeLensFontFamily": "18",
     "editor.inlayHints.fontFamily": "18",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.mouseWheelZoom": true,
     "cSpell.words": [
         "speciality"
