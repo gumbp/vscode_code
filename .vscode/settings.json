@@ -81,5 +81,6 @@
     "cSpell.words": [
         "speciality"
     ],
-    "workbench.editor.enablePreview": false, // 格式化时调整include的顺序（按字母排序）
+    "workbench.editor.enablePreview": false,
+    "terminal.integrated.fontSize": 17, // 格式化时调整include的顺序（按字母排序）
 }

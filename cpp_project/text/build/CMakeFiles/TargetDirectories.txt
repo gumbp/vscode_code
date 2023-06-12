@@ -1,0 +1,3 @@
+G:/c_cpp_projectfile/cpp_project/text/build/CMakeFiles/hello.dir
+G:/c_cpp_projectfile/cpp_project/text/build/CMakeFiles/edit_cache.dir
+G:/c_cpp_projectfile/cpp_project/text/build/CMakeFiles/rebuild_cache.dir
