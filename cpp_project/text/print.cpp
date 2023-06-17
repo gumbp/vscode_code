@@ -11,6 +11,10 @@ int sub(int &a,int&b){
 	return a-b;
 }
 
+int abs(int a){
+	return a>0?a:-a;
+}
+
 
 
 
