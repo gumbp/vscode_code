@@ -8,7 +8,7 @@ using namespace std;
 class sort_compare
 {
 private:
-    vector<int> nums;
+     vector<int> nums;
 
 public:
     sort_compare();
@@ -16,11 +16,14 @@ public:
     sort_compare(const sort_compare &S);
     ~sort_compare();
     void menu();
+    vector<int> GetNums();
     void Display();
+    void run(vector<int>&nums);
 
     int partition(vector<int> &nums, int low, int high);
 
     vector<int> quick_sort(vector<int> &nums, int low, int high);
+    
     void swap(int &x, int &y);
 
     vector<int> bubble_sort(vector<int> &nums);

@@ -10,12 +10,20 @@ Interface::Interface()
 
 void Display()
 {
-    cout << "**********0.退   出**********" << endl;
-    cout << "**********1.录入信息**********" << endl;
-    cout << "**********2.查询信息**********" << endl;
-    cout << "**********3.浏览信息**********" << endl;
-    cout << "**********4.年龄排序**********" << endl;
-    cout << "**********5.统计信息**********" << endl;
+    // cout << "**********0.退   出**********" << endl;
+    // cout << "**********1.录入信息**********" << endl;
+    // cout << "**********2.查询信息**********" << endl;
+    // cout << "**********3.浏览信息**********" << endl;
+    // cout << "**********4.年龄排序**********" << endl;
+    // cout << "**********5.统计信息**********" << endl;
+    cout << "0.exit" << endl;
+    cout << "1.input information" << endl;
+    cout << "2.find the information" << endl;
+    cout << "3.browse the information" << endl;
+    cout << "4.counting the information by age" << endl;
+    cout << "5.statistic the information" << endl;
+
+    
 }
 
 void Interface::Run()
@@ -23,8 +31,9 @@ void Interface::Run()
     int choice;
     do
     {
+        cout << endl;
         Display();
-        cout << "请输入你的选择" << endl;
+        cout << "please input your choises" << endl;
         cin >> choice;
         switch (choice)
         {
@@ -55,7 +64,8 @@ void Interface::Input()
 {
     if (num == N)
     {
-        cout << "数据已满，不可录入" << endl;
+        // cout << "数据已满，不可录入" << endl;
+    cout << "the data space is full,recording failed" << endl;
         return;
     }
     int i = num;
@@ -65,10 +75,12 @@ void Interface::Input()
 
 void Interface::Browse()
 {
-    cout << "你要查看的学生数据如下" << endl;
+    // cout << "你要查看的学生数据如下" << endl;
+    cout << "the information of the student who you want to check is following"<<endl;
     if (num == 0)
     {
-        cout << "没有数据" << endl;
+        // cout << "没有数据" << endl;
+        cout << "no data were found" << endl;
         return;
     }
     else
@@ -98,7 +110,7 @@ bool Interface::search()
         cout << "查无此人" << endl;
         return false;
     }
-    cout << st[i];
+    cout << st[i]<<endl;
     return true;
 }
 

@@ -5,10 +5,15 @@ sort_compare::sort_compare(const int &n)
 {
     for (int i = 0; i < n; i++)
     {
-        nums[i] = 0;
+        nums.push_back(-i ^ 3);
     }
 }
 sort_compare::~sort_compare() {}
+
+vector<int> sort_compare::GetNums()
+{
+    return nums;
+}
 
 // 快排序
 int sort_compare::partition(vector<int> &nums, int low, int high)
@@ -27,10 +32,10 @@ int sort_compare::partition(vector<int> &nums, int low, int high)
             ++low;
         }
         nums[high] = nums[low];
-    }
-    return low;
-}
 
+        return low;
+    }
+}
 vector<int> sort_compare::quick_sort(vector<int> &nums, int low, int high)
 {
     if (low < high)
@@ -270,6 +275,7 @@ int sort_compare::middle_search(vector<int> &nums, int key)
             low = middle + 1;
         }
     }
+    cout << "not exits";
     return -1;
 }
 
@@ -284,7 +290,7 @@ void sort_compare::menu()
     cout << "*************6.计数排序*************" << endl;
     cout << "*************7.堆排序*************" << endl;
     cout << "*************8.计数排序.*************" << endl;
-    cout << "*************9.排序.*************" << endl;
+    cout << "*************9.查    找.*************" << endl;
     cout << "*************0.退出系统.*************" << endl;
 }
 void sort_compare::Display()
@@ -293,5 +299,74 @@ void sort_compare::Display()
     for (int i = 0; i < nums.size(); i++)
     {
         cout << nums.size() << "   ";
+    }
+}
+
+void sort_compare::run(vector<int> &nums)
+{
+    int choose;
+    menu();
+    cout << "please choose your sort algorithms";
+    cin >> choose;
+    if (choose > 9 || choose < 0)
+    {
+        cout << "error parameter,please input the correct parameter" << endl;
+        return;
+    }
+    switch (choose)
+    {
+    case 1:
+
+        bubble_sort(nums);
+        Display();
+        break;
+    case 2:
+        insert_sort(nums);
+        Display();
+        break;
+
+    case 3:
+        select_sort(nums);
+        Display();
+        break;
+
+    case 4:
+        quick_sort(nums, 0, nums.size() - 1);
+        Display();
+        break;
+
+    case 5:
+        merge_sort(nums, 0, nums.size() - 1);
+        Display();
+        break;
+
+    case 6:
+        count_sort(nums);
+        Display();
+        break;
+
+    case 7:
+        heap_sort(nums);
+        Display();
+        break;
+
+    case 8:
+        cout << "please input the key";
+        int key;
+        cin >> key;
+        middle_search(nums, key);
+        break;
+
+    default:
+        // break;
+
+        cout << "carry on?(y or n)";
+        char instruciton;
+        cin >> instruciton;
+        while (instruciton == 'y' || instruciton == 'Y')
+        {
+            run(nums);
+        }
+        break;
     }
 }

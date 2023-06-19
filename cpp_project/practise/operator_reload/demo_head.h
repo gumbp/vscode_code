@@ -1,5 +1,5 @@
 #ifndef POINT_H //如果没有定义POINT_H这个宏，则编译以下代码
-#define POINT_H 0 //定义宏 ，避免此后重复编译#include <iostream>
+#define POINT_H 0 //
 
 #include <iostream>
 using namespace std;
