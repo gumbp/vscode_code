@@ -1,0 +1,3 @@
+G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS/build/CMakeFiles/Student_Management_System.dir
+G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS/build/CMakeFiles/edit_cache.dir
+G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS/build/CMakeFiles/rebuild_cache.dir

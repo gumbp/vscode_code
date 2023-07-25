@@ -1,0 +1,3 @@
+G:/c_cpp_projectfile/cpp_project/practise/SMS_chapter07/build/CMakeFiles/SMS.dir
+G:/c_cpp_projectfile/cpp_project/practise/SMS_chapter07/build/CMakeFiles/edit_cache.dir
+G:/c_cpp_projectfile/cpp_project/practise/SMS_chapter07/build/CMakeFiles/rebuild_cache.dir

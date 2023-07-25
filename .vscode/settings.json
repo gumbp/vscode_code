@@ -7,12 +7,12 @@
 
     "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法输入
     "code-runner.executorMap": {
-        //编译当前文件夹内所有cpp文件
         "c": "cd $dir && gcc *.c -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c11 -fexec-charset=GBK && $dir$fileNameWithoutExt",
-        // 只编译当前文件
-        // "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt"
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
-        
+        // 只编译当前cpp文件
+        // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
+
+        //编译当前文件夹内所有cpp文件
+        "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
         "javascript": "node",
         "php": "C:\\php\\php.exe",
         "python": "python",
@@ -70,7 +70,10 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "unordered_set": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "list": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp"
     },
     "editor.codeLensFontSize": 18,
     "editor.fontSize": 18,
@@ -82,5 +85,6 @@
         "speciality"
     ],
     "workbench.editor.enablePreview": false,
-    "terminal.integrated.fontSize": 17, // 格式化时调整include的顺序（按字母排序）
+    "terminal.integrated.fontSize": 17,
+    "cmake.sourceDirectory": "G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS", // 格式化时调整include的顺序（按字母排序）
 }

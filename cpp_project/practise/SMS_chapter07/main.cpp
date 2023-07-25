@@ -1,7 +1,5 @@
 #include "student.h"
-#include "student.cpp"
 #include <algorithm>
-#include <iostream>
 #include <vector>
 using namespace std;
 void menu();
@@ -10,6 +8,10 @@ void InputStu(vector<Student> &stu_vec);
 void Find(vector<Student> &stu_vec,string &na);
 int main()
 {
+    string a;
+    cout << "输入字符" << endl;
+    cin >> a;
+    cout << a;
 
     vector<Student> stu_vec;
     int choice;

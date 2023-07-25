@@ -1,0 +1,20 @@
+[
+{
+  "directory": "G:/c_cpp_projectfile/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\Student_Management_System.dir\\main.cpp.obj -c G:\\c_cpp_projectfile\\cpp_project\\practise\\chapter_07_SMS\\main.cpp",
+  "file": "G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS/main.cpp",
+  "output": "CMakeFiles/Student_Management_System.dir/main.cpp.obj"
+},
+{
+  "directory": "G:/c_cpp_projectfile/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\Student_Management_System.dir\\function.cpp.obj -c G:\\c_cpp_projectfile\\cpp_project\\practise\\chapter_07_SMS\\function.cpp",
+  "file": "G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS/function.cpp",
+  "output": "CMakeFiles/Student_Management_System.dir/function.cpp.obj"
+},
+{
+  "directory": "G:/c_cpp_projectfile/build",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\Student_Management_System.dir\\student.cpp.obj -c G:\\c_cpp_projectfile\\cpp_project\\practise\\chapter_07_SMS\\student.cpp",
+  "file": "G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS/student.cpp",
+  "output": "CMakeFiles/Student_Management_System.dir/student.cpp.obj"
+}
+]

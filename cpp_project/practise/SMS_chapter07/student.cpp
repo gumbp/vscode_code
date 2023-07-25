@@ -50,9 +50,9 @@ string Student::GetSpec()
 
 void Student::Display() const
 {
-    cout << "姓   名:" << name << endl;
-    cout << "身份证号:" << ID << endl;
-    cout << "学   号:" << number << endl;
+    cout << "姓   名：" << name << endl;
+    cout << "身份证号" << ID << endl;
+    cout << "学   号" << number << endl;
     cout << "年   龄:" << age << endl;
     cout << "专   业:" << speciality << endl;
 }
@@ -60,21 +60,21 @@ void Student::Display() const
 void Student::input()
 {
     cin.get();
-    cout << "输入姓名：";
+    cout << "请输入姓名:";
     getline(cin, name);
     cin.get();
-    cout << "输入身份证：";
+    cout << "身份证号： ";
     getline(cin, ID);
 
     cin.get();
-    cout << "输入学号：";
+    cout << "学号";
     getline(cin, number);
 
     cin.get();
-    cout << "输入专业：";
+    cout << "专业：";
     getline(cin, speciality);
 
-    cout << "输入年龄：";
+    cout << "年龄：";
     //cin.get();
     cin >> age;
 }

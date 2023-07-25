@@ -29,4 +29,17 @@ void level_order_Binary(Binarytree *T);
 //找到二叉树中的最小节点值
 void find_min_data(Binarytree *t, int &key);
 
+
+// 计算所给二叉树的叶子节点数
+int Count_LeafNode(Binarytree *T);
+
+
+// 计算所给二叉树的双分支节点个数
+int Count_DoubleLeaf(Binarytree *T);
+
+// 计算二叉树所有节点值之和
+int Sum_Of_NodeValue(Binarytree *T);
+
+// 计算二叉数中节点值为x的节点数
+int Count_Value_X(Binarytree *T, int &x);
 #endif
