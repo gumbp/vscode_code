@@ -140,24 +140,20 @@ int Count_Value_X(Binarytree *T,int &x)
     return n + Count_Value_X(T->lchild, x) + Count_Value_X(T->rchild, x);
 }
 
+//计算二叉树中最小节点值
+void find_min_value(Binarytree *T){
+  static int min=0xfffff;
+  if(T==nullptr){
+    return min;
+  }
+  if(T->data<min)
+  {
+    min=T->data;
 
-// double f( int n, double a[], double x ){
-//     double  sum=0;
-//     for(int i=0;i<n+1;i++){
-//         double m=1;
-//         for(int j=0;j<i;j++){
-//             m=m*x;
-//         }
-//         sum=sum+a[i]*m;
-//     }
-//     return sum;
-// }
+  }
+  find_min_value(T->lchild);
+  find_min_value(T->rchld);
+  return min;
+}
 
-
-// double f( int n, double a[], double x ){
-//     double  sum=0;
-//     for(int i=0;i<n+1;i++){
-//         sum += a[i] * x ^ i;
-//     }
-//     return sum;
 // }

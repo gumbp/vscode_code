@@ -7,12 +7,13 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${fileDirname}\\*.cpp",//编译当前文件夹内所有.cpp文件
-                // "${file}",//仅编译当前文件
+                "-fexec-charset=GBK",
+                "-std=c++17",
+                // "${fileDirname}\\*.cpp",//编译当前文件夹内所有.cpp文件
+                "${file}",//仅编译当前文件
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
-                "-iquote${workspaceFolder}/headers",
-                "-fexec-charset=GBK"
+                "-iquote${workspaceFolder}/headers"
             ],
             "options": {
                 "cwd": "${fileDirname}"

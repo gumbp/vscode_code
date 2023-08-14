@@ -11,7 +11,7 @@ int main()
     string a;
     cout << "输入字符" << endl;
     cin >> a;
-    cout << a;
+    cout << a<<endl;
 
     vector<Student> stu_vec;
     int choice;

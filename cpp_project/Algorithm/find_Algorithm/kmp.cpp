@@ -79,6 +79,7 @@ istream &operator>>(istream &in, SString &a)
     return in;
 }
 
+
 int main()
 {
     SString s, t;

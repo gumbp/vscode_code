@@ -9,10 +9,10 @@
     "code-runner.executorMap": {
         "c": "cd $dir && gcc *.c -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c11 -fexec-charset=GBK && $dir$fileNameWithoutExt",
         // 只编译当前cpp文件
-        // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
 
         //编译当前文件夹内所有cpp文件
-        "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
+        // "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
         "javascript": "node",
         "php": "C:\\php\\php.exe",
         "python": "python",
@@ -73,7 +73,8 @@
         "map": "cpp",
         "list": "cpp",
         "functional": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "valarray": "cpp"
     },
     "editor.codeLensFontSize": 18,
     "editor.fontSize": 18,
@@ -87,4 +88,13 @@
     "workbench.editor.enablePreview": false,
     "terminal.integrated.fontSize": 17,
     "cmake.sourceDirectory": "G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS", // 格式化时调整include的顺序（按字母排序）
+    "cmake.configureArgs": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "_DCMAKE_CXX_COMPIER=g++"
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
+// "cmake.configureSettings": {
+//     "CMAKE_C_FLAGS": "/source-charset:gbk",
+//     "CMAKE_CXX_FLAGS": "/source-charset:gbk"
+//   }
 }
