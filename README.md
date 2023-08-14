@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ***vscode_code c++代码练习总仓库***
 ## vscode代码记录,主要作：
 * 代码复习
@@ -6,3 +7,7 @@
 * 开发简易系统
 * Leetcode刷题 (冲  起码保证每日一题)
 
+=======
+# practice under the vscode
+*vscode 练习代码,主要作复习C++及经典算法的实现,捣鼓配套工具链（cmake，vim,codegpt，git，shell等）*
+>>>>>>> 3b9e9d9a549e7cc34e0505f150105f1130e8b6a4
