@@ -7,7 +7,13 @@
 
     "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法输入
     "code-runner.executorMap": {
-        "c": "cd $dir && gcc *.c -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c11 -fexec-charset=GBK && $dir$fileNameWithoutExt",
+        //只编译当前c文件
+        "c":"cd $dir && gcc $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
+
+        //编译当前文件夹内所有c文件
+        // "c": "cd $dir && gcc *.c -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c11 -fexec-charset=GBK && $dir$fileNameWithoutExt",
+
+
         // 只编译当前cpp文件
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK && $dir$fileNameWithoutExt",
 
@@ -92,7 +98,7 @@
         "-DCMAKE_BUILD_TYPE=Release",
         "_DCMAKE_CXX_COMPIER=g++"
     ],
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "enabled"
 // "cmake.configureSettings": {
 //     "CMAKE_C_FLAGS": "/source-charset:gbk",
 //     "CMAKE_CXX_FLAGS": "/source-charset:gbk"

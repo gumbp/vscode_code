@@ -3,6 +3,7 @@ int main()
 {
 
     sort_compare mysort(10);
-    mysort.run(mysort.GetNums());
+    vector<int> arary=mysort.GetNums();
+    mysort.run(arary);
     return 0;
 }

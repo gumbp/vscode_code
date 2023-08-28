@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unordered_map>
-
-int main() {
+int main()
+{
     // 创建一个unordered_map对象
     std::unordered_map<std::string, int> myMap;
 
@@ -10,10 +10,10 @@ int main() {
     myMap.insert({"banana", 3});
     myMap.insert({"orange", 7});
 
-    //手动插入键值对
+    // 手动插入键值对
     std::pair<std::string, int> mypair;
     std::cout << "pleanse input you key-value" << std::endl;
-    while(std::cin>>mypair.first>>mypair.second)
+    while (std::cin >> mypair.first >> mypair.second)
     {
         myMap.insert(mypair);
         std::cout << "pleanse input you key-value" << std::endl;
@@ -21,9 +21,12 @@ int main() {
 
     // 查找键值对
     auto it = myMap.find("banana");
-    if (it != myMap.end()) {
+    if (it != myMap.end())
+    {
         std::cout << "The value of banana is: " << it->second << std::endl;
-    } else {
+    }
+    else
+    {
         std::cout << "banana not found" << std::endl;
     }
 
@@ -31,7 +34,8 @@ int main() {
     myMap.erase("orange");
 
     // 遍历键值对
-    for (const auto& pair : myMap) {
+    for (const auto &pair : myMap)
+    {
         std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
     }
 

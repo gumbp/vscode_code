@@ -1,6 +1,5 @@
 #ifndef sort_h
 #define sort_h
-
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -21,15 +20,15 @@ public:
     void run(vector<int>&nums);
 
     int partition(vector<int> &nums, int low, int high);
-
     vector<int> quick_sort(vector<int> &nums, int low, int high);
-    
     void swap(int &x, int &y);
 
     vector<int> bubble_sort(vector<int> &nums);
 
     vector<int> insert_sort(vector<int> &nums);
+
     vector<int> sort_compare::select_sort(vector<int> &nums);
+
     vector<int> merge_sort(vector<int> &nums, int low, int high);
     void merge(vector<int> &nums, int low, int mid, int high);
 

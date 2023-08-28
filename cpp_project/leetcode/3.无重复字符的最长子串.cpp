@@ -1,3 +1,11 @@
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem3.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
 /*
  * @lc app=leetcode.cn id=3 lang=cpp
  *
@@ -25,8 +33,6 @@ public:
             {
 
                 // 判断当前元素是否出现过，若否 则加入元素  并将count++
-                // if ((map_s.find(s[j]) == map_s.end()) || (map_s[s[j]] < i))
-
                 if ((map_s.find(s[j]) == map_s.end()) )
                 {
                     count++;

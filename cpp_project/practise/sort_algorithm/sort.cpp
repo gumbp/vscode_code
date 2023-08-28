@@ -5,7 +5,7 @@ sort_compare::sort_compare(const int &n)
 {
     for (int i = 0; i < n; i++)
     {
-        nums.push_back(-i ^ 3);
+        nums.push_back((-i) ^ 3);
     }
 }
 sort_compare::~sort_compare() {}
