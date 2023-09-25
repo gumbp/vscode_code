@@ -19,16 +19,18 @@ struct Node
 };
 
 vector<Edge> graph[300]; // 定义该图 以邻接表的形式
-//重载<运算符，便于计算调整小根堆（优先级队列）
+// 重载<运算符，便于计算调整小根堆（优先级队列）
 bool operator<(Node lhs, Node rhs)
 {
     return lhs.dist > rhs.dist;
 }
+//s为起点  t为终点
 int dijksdra(int s, int t, int n)
 {
     int dist[N]; // 记录起点到各点的最短距离，初始时为无穷大  例如dist[i]表示起点到顶点i的最短距离
     bool isvisit[N];
-    if(s<0||t>(n-1)){
+    if (s < 0 || t > (n - 1))
+    {
         cout << "起点或终点错误，请重新输入";
         return -1;
     }
@@ -77,6 +79,9 @@ int dijksdra(int s, int t, int n)
     return -1;
 }
 
+
+
+
 int main()
 {
     int n, m; // n表示顶点数 m表示边数
@@ -114,14 +119,15 @@ int main()
         }
     }
     char instruction;
-    do{
-        
+    do
+    {
+
         int s, t; // 起点，终点信息
         cout << "请输入起点及终点编号" << endl;
         cin >> s >> t;
-        cout << dijksdra(s, t, n)<<endl;
+        cout << dijksdra(s, t, n) << endl;
         cout << "是否继续输入？（Y/N）";
-        cin >>instruction;
-    } while (instruction == 'Y'||instruction=='y');
+        cin >> instruction;
+    } while (instruction == 'Y' || instruction == 'y');
     return 0;
 }

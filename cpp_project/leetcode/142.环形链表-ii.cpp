@@ -13,26 +13,35 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
-    ListNode *detectCycle(ListNode *head) {
-        if(head==nullptr||head->next==nullptr){
+    ListNode *detectCycle(ListNode *head)
+    {
+        if (head == nullptr || head->next == nullptr)
+        {
             return NULL;
         }
         ListNode *slow = head;
         ListNode *fast = head;
-        while(fast&&fast->next){
+        while (fast && fast->next)
+        {
             fast = fast->next->next;
             slow = slow->next;
-            if(slow==fast){
+
+            if (slow == fast)
+            {
                 break;
             }
         }
-        if(slow!=fast){
+        // 结束while循环时，若slow指针和fast指针不相等  则链表无环
+        if (slow != fast)
+        {
             return NULL;
         }
         slow = head;
-        while(slow!=fast){
+        while (slow != fast)
+        {
             slow = slow->next;
             fast = fast->next;
         }
@@ -40,4 +49,3 @@ public:
     }
 };
 // @lc code=end
-

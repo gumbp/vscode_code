@@ -80,7 +80,8 @@
         "list": "cpp",
         "functional": "cpp",
         "iterator": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "cstring": "cpp"
     },
     "editor.codeLensFontSize": 18,
     "editor.fontSize": 18,

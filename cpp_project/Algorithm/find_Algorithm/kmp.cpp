@@ -4,8 +4,6 @@ using namespace std;
 #define N 100
 
 // 定义串的数据结构
-
-
 typedef struct
 {
     char ch[N];

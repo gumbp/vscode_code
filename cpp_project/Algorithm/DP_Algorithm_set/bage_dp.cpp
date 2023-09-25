@@ -9,7 +9,7 @@ int main()
     cin >> n >> v;
     vector<int> weight(n + 1, 0);
     vector<int> value(n + 1, 0);
-    int best[p][p]={0};//initialization has a problem that the default value are not all  zero. So why?
+    int best[p][p]={0};//initialization has a problem that the array's default value are not all zero. So why?
     for (int i = 1; i <= n; i++)
     {
         cin >> weight[i] >> value[i];

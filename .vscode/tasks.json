@@ -2,15 +2,17 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "gdb编译器",
+            "label": "gdb_compiler",
             "command": "C:\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "-fexec-charset=GBK",
+                "-Wall",//开启额外警告
+                "-static-libgcc",//静态链接libgcc
                 "-std=c++17",
                 // "${fileDirname}\\*.cpp",//编译当前文件夹内所有.cpp文件
-                "${file}",//仅编译当前文件
+                "${file}", //仅编译当前文件
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-iquote${workspaceFolder}/headers"
@@ -21,6 +23,12 @@
             "problemMatcher": [
                 "$gcc"
             ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always", // 执行任务时是否跳转到终端面板，可以为always，silent，never。具体参见VSC的文档
+                "focus": false, // 设为true后可以使执行task时焦点聚集在终端，但对编译C/C++来说，设为true没有意义
+                "panel": "shared" // 不同的文件的编译信息共享一个终端面板
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -30,14 +38,11 @@
     ],
     "version": "2.0.0"
 }
-
-
 //各类file解释
 // ${file}：当前正在编辑的文件名，包括绝对路径、文件名以及后缀；
 // ${fileDirname}：当前打开的文件所在的绝对路径，不包括文件名；
 // ${fileBasenameNoExtension}：当前打开的文件的文件名，不包括路径和后缀名。
 // 比如，当前打开的文件路径为D:/test/hello.cpp，那么这三个变量分别为
-
 // ${file}：D:/test/hello.cpp
 // ${fileDirname}：D:/test
 // ${fileBasenameNoExtension}：hello
