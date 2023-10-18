@@ -10,11 +10,12 @@ class Solution
 public:
     string longestCommonPrefix(vector<string> &strs)
     {
-        if(strs.size()<=1){
+        if (strs.size() <= 1)
+        {
             return strs[0];
         }
-        int min_len = 0xffffffff;//记录strs数组中长度最短的元素 以他为匹配基准
-        int j = 0;//记录strs数组中最短元素在数组中的下标
+        int min_len = 0xffffffff; // 记录strs数组中长度最短的元素 以他为匹配基准
+        int j = 0;                // 记录strs数组中最短元素在数组中的下标
         for (auto i = 0; i < strs.size(); i++)
         {
             if (strs[i].size() < min_len)

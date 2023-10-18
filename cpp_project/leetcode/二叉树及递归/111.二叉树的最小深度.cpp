@@ -28,14 +28,17 @@ public:
         {
             return 0;
         }
+        //若为叶子结点，返回本层深度
         else if (root->left == nullptr && root->right == nullptr)
         {
             return 1;
         }
+        //不为叶子结点且若左子树为空  递归遍历右子树
         else if (root->left == nullptr)
         {
             return 1 + get_min_depth(root->right);
         }
+        //不为叶子节点且右子树为空 递归遍历左子树
         else if (root->right == nullptr)
         {
             return 1 + get_min_depth(root->left);
