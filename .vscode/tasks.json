@@ -3,7 +3,9 @@
         {
             "type": "cppbuild",
             "label": "gdb_compiler",
-            "command": "C:\\mingw64\\bin\\g++.exe",
+            // "command": "C:\\mingw64\\bin\\g++.exe",
+            // "command": "C:\\Program Files (x86)\\mingw64\bin\\g++.exe",
+            "command": "C:\\Program Files (x86)\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",

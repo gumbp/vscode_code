@@ -1,9 +1,14 @@
 /*
+ * @Author: Mr.Gan 
+ * @Date: 2023-10-18 18:48:29 
+ * @Last Modified by: Mr.Gan
+ * @Last Modified time: 2023-10-18 22:44:14
+ */
+/*
  * @lc app=leetcode.cn id=104 lang=cpp
  *
  * [104] 二叉树的最大深度
  */
-
 // @lc code=start
 /**
  * Definition for a binary tree node.
@@ -30,7 +35,6 @@ public:
     //      }
     //      return (maxDepth(root->left) + 1) > (maxDepth(root->right) + 1) ? (maxDepth(root->left) + 1) : (maxDepth(root->right) + 1);
     //  }
-
     // 迭代版本  借助队列实现
     {
         int count = 0;
