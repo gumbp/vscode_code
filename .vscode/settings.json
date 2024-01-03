@@ -81,6 +81,7 @@
     "editor.codeLensFontFamily": "18",
     "editor.inlayHints.fontFamily": "18",
     "window.zoomLevel": 0,
+    "editor.formatOnPaste":true,
     "editor.mouseWheelZoom": true,
     "cSpell.words": [
         "speciality"
@@ -92,7 +93,10 @@
         "-DCMAKE_BUILD_TYPE=Release",
         "_DCMAKE_CXX_COMPIER=g++"
     ],
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands"
     // "cmake.configureSettings": {
     //     "CMAKE_C_FLAGS": "/source-charset:gbk",
     //     "CMAKE_CXX_FLAGS": "/source-charset:gbk"

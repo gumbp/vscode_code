@@ -10,8 +10,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "-fexec-charset=GBK",
-                "-Wall",//开启额外警告
-                "-static-libgcc",//静态链接libgcc
+                "-Wall", //开启额外警告
+                "-static-libgcc", //静态链接libgcc
                 "-std=c++17",
                 // "${fileDirname}\\*.cpp",//编译当前文件夹内所有.cpp文件
                 "${file}", //仅编译当前文件
