@@ -12,7 +12,7 @@ public:
     if (path.size() > 1) {
       res.push_back(path);
     }
-    int used[201] = {0};
+    int used[201] = {0};//单独在每一层初始化验证数组  因为只有在同一层上才不允许元素的重复出现 
     for (int i = startIndex; i < nums.size(); i++) {
       if (path.size() > 0 && path.back() > nums[i] ||
           used[nums[i] + 100] == 1) {

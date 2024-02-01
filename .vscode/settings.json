@@ -96,7 +96,8 @@
     "C_Cpp.errorSquiggles": "disabled",
     "lldb.showDisassembly": "auto",
     "lldb.dereferencePointers": true,
-    "lldb.consoleMode": "commands"
+    "lldb.consoleMode": "commands",
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
     // "cmake.configureSettings": {
     //     "CMAKE_C_FLAGS": "/source-charset:gbk",
     //     "CMAKE_CXX_FLAGS": "/source-charset:gbk"
