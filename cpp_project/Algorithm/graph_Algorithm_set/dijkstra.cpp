@@ -4,7 +4,6 @@
 using namespace std;
 #define N 300
 // 实现单源最短路径
-
 // 定义某一顶点所关联的边的的信息
 struct Edge
 {
