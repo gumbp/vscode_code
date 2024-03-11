@@ -8,8 +8,7 @@
 
 #include <iostream>
 #include <map>
-using namespace std;
-class ShoppingCarManager
+using naj'jespace std; class ShoppingCarManager
 {
 public:
     // get instace of shopping car
