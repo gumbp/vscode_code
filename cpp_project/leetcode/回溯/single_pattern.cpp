@@ -7,8 +7,7 @@
 // 输出包含小明购物车中的所有商品及其购买数量。每行输出一种商品的信息，格式为 "商品名称 购买数量"。
 #include <iostream>
 #include <map>
-using namespace std;
-class ShoppingCarManager
+using naj'jespace std; class ShoppingCarManager
 {
 public:
     // get instace of shopping car
