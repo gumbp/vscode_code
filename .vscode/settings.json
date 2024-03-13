@@ -81,19 +81,19 @@
     "editor.codeLensFontFamily": "18",
     "editor.inlayHints.fontFamily": "18",
     "window.zoomLevel": 0,
-    "editor.formatOnPaste":true,
+    "editor.formatOnPaste": true,
     "editor.mouseWheelZoom": true,
     "cSpell.words": [
         "speciality"
     ],
     "workbench.editor.enablePreview": false,
     "terminal.integrated.fontSize": 17,
-    "cmake.sourceDirectory": "G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS", // 格式化时调整include的顺序（按字母排序）
-    "cmake.configureArgs": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "_DCMAKE_CXX_COMPIER=g++"
-    ],
-    "C_Cpp.errorSquiggles": "disabled",
+    // "cmake.sourceDirectory": "G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS", // 格式化时调整include的顺序（按字母排序）
+    // "cmake.configureArgs": [
+    //     "-DCMAKE_BUILD_TYPE=Release",
+    //     "_DCMAKE_CXX_COMPIER=g++"
+    // ],
+    "C_Cpp.errorSquiggles": "enabled",
     "lldb.showDisassembly": "auto",
     "lldb.dereferencePointers": true,
     "lldb.consoleMode": "commands",

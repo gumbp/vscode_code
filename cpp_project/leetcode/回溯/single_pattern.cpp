@@ -5,7 +5,6 @@
 // 输入包含若干行，每行包含两部分信息，分别是商品名称和购买数量。商品名称和购买数量之间用空格隔开。
 // 输出描述
 // 输出包含小明购物车中的所有商品及其购买数量。每行输出一种商品的信息，格式为 "商品名称 购买数量"。
-
 #include <iostream>
 #include <map>
 using namespace std;
@@ -25,8 +24,8 @@ public:
         cart[itemName] += nums;
     }
 
-    // view the shoppin cart
-    // 常成员函数，表示本能修改人了类成员的值
+    // view the shopping cart
+    // 常成员函数，表示不能修改类内成员的值
     void viewCart() const
     {
         for (const auto &item : cart)
@@ -38,7 +37,7 @@ public:
 private:
     // 私有的构造函数
     ShoppingCarManager(){};
-    // the map of the item and nums in cart
+    // the map of the item and nums in shopping car
     map<string, int> cart;
 };
 
