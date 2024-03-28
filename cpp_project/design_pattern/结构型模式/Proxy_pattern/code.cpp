@@ -40,16 +40,16 @@ public:
     }
 };
 
-// int main()
-// {
-//     int n;
-//     std::cin >> n;
-//     std::unique_ptr<HomePurchase> buyerProxy = std::make_unique<HomeAgentProxy>();
-//     for (int i = 0; i < n; i++)
-//     {
-//         int area;
-//         std::cin >> area;
-//         buyerProxy->requestPurchase(area);
-//     }
-//     return 0;
-// }
+int main()
+{
+    int n;
+    std::cin >> n;
+    std::unique_ptr<HomePurchase> buyerProxy = std::make_unique<HomeAgentProxy>();
+    for (int i = 0; i < n; i++)
+    {
+        int area;
+        std::cin >> area;
+        buyerProxy->requestPurchase(area);
+    }
+    return 0;
+}
