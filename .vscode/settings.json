@@ -89,23 +89,22 @@
     "workbench.editor.enablePreview": false,
     "terminal.integrated.fontSize": 17,
     // "cmake.sourceDirectory": "G:/c_cpp_projectfile/cpp_project/practise/chapter_07_SMS", // 格式化时调整include的顺序（按字母排序）
-<<<<<<< HEAD
     // "cmake.configureArgs": [
     //     "-DCMAKE_BUILD_TYPE=Release",
     //     "_DCMAKE_CXX_COMPIER=g++"
     // ],
     "C_Cpp.errorSquiggles": "enabled",
-=======
-    "cmake.configureArgs": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "_DCMAKE_CXX_COMPIER=g++"
-    ],
-    "C_Cpp.errorSquiggles": "disabled",
->>>>>>> 53f416d0b2a8dbdaa31bb741a1a0c6a5b5cbf0fd
-    "lldb.showDisassembly": "auto",
-    "lldb.dereferencePointers": true,
-    "lldb.consoleMode": "commands",
-    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+// =======
+//     "cmake.configureArgs": [
+//         "-DCMAKE_BUILD_TYPE=Release",
+//         "_DCMAKE_CXX_COMPIER=g++"
+//     ],
+//     "C_Cpp.errorSquiggles": "disabled",
+// >>>>>>> 53f416d0b2a8dbdaa31bb741a1a0c6a5b5cbf0fd
+//     "lldb.showDisassembly": "auto",
+//     "lldb.dereferencePointers": true,
+//     "lldb.consoleMode": "commands",
+//     "CodeGPT.apiKey": "CodeGPT Plus Beta"
     // "cmake.configureSettings": {
     //     "CMAKE_C_FLAGS": "/source-charset:gbk",
     //     "CMAKE_CXX_FLAGS": "/source-charset:gbk"
