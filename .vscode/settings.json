@@ -93,7 +93,8 @@
     //     "-DCMAKE_BUILD_TYPE=Release",
     //     "_DCMAKE_CXX_COMPIER=g++"
     // ],
-    "C_Cpp.errorSquiggles": "enabled",
+    // "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.errorSquiggles": "disabled",
 // =======
 //     "cmake.configureArgs": [
 //         "-DCMAKE_BUILD_TYPE=Release",

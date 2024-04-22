@@ -42,7 +42,7 @@ protected:
     unique_ptr<Coffee> coffee;
 
 public:
-    // 构造函数，将传入的coffee参数（）赋值给类的成员变量coffee
+    // 构造函数，将传入的coffee参数赋值给类的成员变量coffee
     Decorator(unique_ptr<Coffee> coffee) : coffee(move(coffee)) {}
 
     void brew() override
@@ -63,6 +63,7 @@ public:
 
     void brew() override
     {
+        //调用父类的brew方法
         Decorator::brew();
         cout << "Adding Milk" << endl;
     }
@@ -119,7 +120,6 @@ int main()
         // 输出制作过程
         if (coffee)
         {
-
             coffee->brew();
         }
         else
