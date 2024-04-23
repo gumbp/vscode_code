@@ -4,12 +4,13 @@
 
 using namespace std;
 int main()
-{   int  n, v;
+{
+    int n, v;
     const int p = 3000;
     cin >> n >> v;
     vector<int> weight(n + 1, 0);
     vector<int> value(n + 1, 0);
-    int best[p][p]={0};//initialization has a problem that the array's default value are not all zero. So why?
+    vector<vector<int>> best(n + 1, vector<int>(v + 1, 0)); // initialization has a problem that the array's default value are not all zero. So why?
     for (int i = 1; i <= n; i++)
     {
         cin >> weight[i] >> value[i];

@@ -95,6 +95,7 @@
     // ],
     // "C_Cpp.errorSquiggles": "enabled",
     "C_Cpp.errorSquiggles": "disabled",
+<<<<<<< HEAD
     // =======
     //     "cmake.configureArgs": [
     //         "-DCMAKE_BUILD_TYPE=Release",
@@ -106,6 +107,19 @@
     //     "lldb.dereferencePointers": true,
     //     "lldb.consoleMode": "commands",
     //     "CodeGPT.apiKey": "CodeGPT Plus Beta"
+=======
+// =======
+//     "cmake.configureArgs": [
+//         "-DCMAKE_BUILD_TYPE=Release",
+//         "_DCMAKE_CXX_COMPIER=g++"
+//     ],
+//     "C_Cpp.errorSquiggles": "disabled",
+// >>>>>>> 53f416d0b2a8dbdaa31bb741a1a0c6a5b5cbf0fd
+//     "lldb.showDisassembly": "auto",
+//     "lldb.dereferencePointers": true,
+//     "lldb.consoleMode": "commands",
+//     "CodeGPT.apiKey": "CodeGPT Plus Beta"
+>>>>>>> 66ab8d77cbc42305507ffa79c61788de39310cb8
     // "cmake.configureSettings": {
     //     "CMAKE_C_FLAGS": "/source-charset:gbk",
     //     "CMAKE_CXX_FLAGS": "/source-charset:gbk"

@@ -1,4 +1,10 @@
 /*
+ * @Author: Mr.Gan 
+ * @Date: 2024-04-22 21:42:34 
+ * @Last Modified by:   Mr.Gan 
+ * @Last Modified time: 2024-04-22 21:42:34 
+ */
+/*
  * @lc app=leetcode.cn id=51 lang=cpp
  *
  * [51] N 皇后
