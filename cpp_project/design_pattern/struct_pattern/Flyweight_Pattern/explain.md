@@ -142,5 +142,4 @@ void processCommand(ShapeFactory &factory, const std::string &command) {
     dynamic_cast<ConcreteShape *>(shape)->setFirstTime(false);
 }
 
-
 ```
