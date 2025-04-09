@@ -133,5 +133,6 @@ private:
         {
             x = x->left;
         }
+        return x;
     }
 };

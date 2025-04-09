@@ -12,7 +12,7 @@ public:
     virtual void swithChannel() = 0;
 };
 
-// 步骤2：创建具体实现化类
+// 步骤2：创建具体实现化�?
 class SonyTV : public TV
 {
 public:
@@ -55,16 +55,16 @@ protected:
     TV *tv;
 
 public:
-    // 构造函数  冒号后面为将子类变量tv使用参数tv进行初始化
+    // 构造函�?  冒号后面为将子类变量tv使用参数tv进行初始�?
     RemoteControl(TV *tv) : tv(tv) {}
     virtual void performOperation() = 0;
 };
 
-// 步骤4：创建扩展抽象化类
+// 步骤4：创建扩展抽象化�?
 class PowerOperation : public RemoteControl
 {
 public:
-    // 构造函数  冒号后面为将父类变量tv使用参数tv进行初始化
+    // 构造函�?  冒号后面为将父类变量tv使用参数tv进行初始�?
     PowerOperation(TV *tv) : RemoteControl(tv) {}
     void performOperation() override
     {
@@ -100,7 +100,7 @@ public:
 int main()
 {
     int N;
-    cout << "请输入操作数目" << endl;
+    cout << "请输入操作数?" << endl;
     cin >> N;
     cin.ignore();
     for (int i = 0; i < N; i++)
@@ -133,7 +133,7 @@ int main()
         {
             remotecontrol = new ChannelSwitchOperation(tv);
         }
-            remotecontrol->performOperation();
+        remotecontrol->performOperation();
         delete tv;
         delete remotecontrol;
     }

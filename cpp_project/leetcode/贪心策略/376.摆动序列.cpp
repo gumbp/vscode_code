@@ -3,6 +3,7 @@
  *
  * [376] 摆动序列
  */
+#include<bits/stdc++.h>
 
 // @lc code=start
 class Solution
