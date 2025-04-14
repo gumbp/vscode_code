@@ -78,9 +78,6 @@ int dijksdra(int s, int t, int n)
     return -1;
 }
 
-
-
-
 int main()
 {
     int n, m; // n表示顶点数 m表示边数
