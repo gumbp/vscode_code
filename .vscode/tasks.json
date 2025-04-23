@@ -3,23 +3,29 @@
         {
             "type": "cppbuild",
             "label": "gdb_compiler",
-            "command": "C:\\mingw64\\bin\\g++.exe",
-            // "command": "C:\\Program Files (x86)\\mingw64\bin\\g++.exe",
+            "command": "cmd.exe",
             "args": [
+                "/C",
+                "C:\\mingw64\\bin\\g++.exe",
                 "-fdiagnostics-color=always",
                 "-g",
                 "-fexec-charset=GBK",
                 "-Wall", //开启额外警告
                 "-static-libgcc", //静态链接libgcc
                 "-std=c++17",
-                // "${fileDirname}\\*.cpp",//编译当前文件夹内所有.cpp文件
-                "${file}", //仅编译当前文件
+                "\"${file}\"", // 用引号包裹文件路径
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "-iquote${workspaceFolder}/headers"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": [
+                        "/C"
+                    ]
+                }
             },
             "problemMatcher": [
                 "$gcc"

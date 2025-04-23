@@ -14,7 +14,6 @@ beginStr 和 endStr 不在 字典 strList 中
 beginStr 转换到 endStr
 需要的最短转换序列中的字符串数量。如果不存在这样的转换序列，则输出 0。
 */
-
 #include <iostream>
 #include <queue>
 #include <string>
