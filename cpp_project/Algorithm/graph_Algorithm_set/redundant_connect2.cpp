@@ -30,7 +30,7 @@ class UFS {
   }
 
   //   将v->u这条边加入并查集
-  void join(int &u, int &v) {
+  void join(int u, int v) {
     u = find(u);
     v = find(v);
     // 若u==v 则说明原先uv在同一个集合 直接返回
